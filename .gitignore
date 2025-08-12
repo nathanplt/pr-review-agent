@@ -1,0 +1,10 @@
+__pycache__/
+.env
+
+.DS_Store
+Thumbs.db
+
+*.db
+*.sqlite3
+
+docker-compose.override.yml 

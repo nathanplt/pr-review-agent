@@ -1,0 +1,7 @@
+FROM python:3.11-slim
+WORKDIR /worker
+COPY services/common /worker/services/common
+COPY services/worker /worker/services/worker
+COPY requirements.txt /worker/
+RUN pip install --no-cache-dir -r requirements.txt
+CMD ["python", "-m", "services.worker.worker"]

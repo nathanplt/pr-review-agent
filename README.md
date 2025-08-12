@@ -1,0 +1,3 @@
+# PR Review Agent (MVP)
+FastAPI webhook → Kafka (Redpanda) → worker runs Rules + Context + OpenAI → posts summary, inline comments, and a status check.
+See `.env.example` and `docker-compose.yml` to run locally.
